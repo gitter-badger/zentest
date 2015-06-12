@@ -30,7 +30,36 @@ npm install zentest
 
 #Usage
 
+##Express specs API
+
 See [specs](specs.js)
+
+##MongoDB seed API
+
+signature: ```db(db,[clean],[fixt])```
+
+- ```db``` (String)
+Mongoose connection uri
+
+- ```clean``` (Array of Strings)
+Mongoose models to empty
+
+- ```fixt``` (Array of 'Fixture' Objects)
+Seeds for database
+
+    - ```Fixture``` (Object)
+    *Properties:*
+        - ```model``` (String)
+        Name of Mongo model
+
+        - ```sample``` (String)
+        Sample fixture
+
+        - ```parent``` (String)
+        Parent object to be merged
+
+        - ```count``` (Number)
+        How many objects to seed
 
 #License
 [MIT](http://opensource.org/licenses/MIT)

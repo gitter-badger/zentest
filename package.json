@@ -1,6 +1,6 @@
 {
   "name": "zentest",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "zentest saves you some LOC when you're using supertest",
   "main": "zentest.js",
   "scripts": {
@@ -28,6 +28,7 @@
     "supertest": "^1.0.1"
   },
   "devDependencies": {
-    "express": "^4.12.4"
+    "express": "^4.12.4",
+    "mongoose": "^4.0.5"
   }
 }
