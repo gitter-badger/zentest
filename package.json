@@ -1,0 +1,31 @@
+{
+  "name": "zentest",
+  "version": "0.0.1",
+  "description": "zentest saves you some LOC when you're using supertest",
+  "main": "zen-specs.js",
+  "scripts": {
+    "test": "node specs.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oceanhouse21/zentest.git"
+  },
+  "keywords": [
+    "test",
+    "specs",
+    "supertest",
+    "js"
+  ],
+  "author": "Georg Schlenkhoff",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oceanhouse21/zentest/issues"
+  },
+  "homepage": "https://github.com/oceanhouse21/zentest#readme",
+  "dependencies": {
+    "express": "^4.12.4",
+    "lodash": "^3.9.3",
+    "promise": "^7.0.1",
+    "supertest": "^1.0.1"
+  }
+}
