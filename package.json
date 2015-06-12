@@ -1,6 +1,6 @@
 {
   "name": "zentest",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "zentest saves you some LOC when you're using supertest",
   "main": "zentest.js",
   "scripts": {
