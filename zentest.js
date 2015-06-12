@@ -77,6 +77,38 @@ zentest.prototype={
     return this.dict[key];
   },
 
+  db:function(db,clean,fixt){
+    return new Promise(function(reso,rej){
+      var promises=_.map(clean,function(obj){return db.models[obj].remove({});});
+      return Promise.all(promises)
+      .then(function(){
+        var models=[];
+        _.map(fixt,function(obj){
+          if(obj.parent)
+            _.merge(obj.sample,obj.parent);
+          if(obj.count){
+            for(var i=0;i<obj.count;i++){
+              models.push(db.models[obj.model].create(JSON.parse(JSON.stringify(obj.sample))));
+            }
+          }else{
+            models.push(db.models[obj.model].create(obj.sample));
+          }
+        });
+        return Promise.all(models);
+      }).then(function(){
+        console.log('seeded database');
+        reso();
+      }).then(null,function(err){
+        rej(err);
+      });
+    });
+  },
+
+  end:function(){
+    console.log('finished tests');
+    process.exit();
+  },
+
 };
 
 module.exports=zentest;
