@@ -1,6 +1,8 @@
 [![Build Status](https://travis-ci.org/oceanhouse21/zentest.svg?branch=master)](https://travis-ci.org/oceanhouse21/zentest)
 #zentest
 
+[![Join the chat at https://gitter.im/oceanhouse21/zentest](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/oceanhouse21/zentest?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 > zentest saves you some LOC when you're using supertet
 
 ```js
