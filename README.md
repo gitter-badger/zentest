@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/oceanhouse21/zentest.svg?branch=master)](https://travis-ci.org/oceanhouse21/zentest)
 #zentest
 
 > zentest saves you some LOC when you're using supertet
